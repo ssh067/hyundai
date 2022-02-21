@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box;}
+li { list-style:none; }
+a {text-decoration:none;}
+body {font-family: 'Oswald', sans-serif;}
+header {position: fixed; top:0; left:0; width:100%; height:55px; overflow:hidden; z-index:1;}
+.row {--bs-gutter-x:none;}
+.navbar-toggler {border:none;}
+.navbar-toggler:focus {display:none;}
+
+header:hover {height:calc(55px + 23vw); transition:1s;}
+
+
+header .navbar-brand img {width:10vw; height:auto;}
+.ground {width:100%; height:100px;}
+.nav-item a {text-align:center;}
+.nav_link_item {display: inline;
+                text-align:center;}
+.nav_link_item a {color:#333;
+        line-height:3vw;
+        font-size:calc(10px + 0.3vw);}
+.nav_link_item a:hover {color:#75b383; border-bottom: 2px solid #75b383; transition:0.2s;}
+.navbar-nav .dropdown-menu {position: relative; top:60px; left:20px;}
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+}
+
+h5 {font-size:16px;
+        text-align: center;}
+
+footer a {color:#bdbdbd;
+        transition: 0.3s;
+        font-size:calc(11px + 0.2vw);}
+footer a:hover {color:#fff;}
+.footer_tit {width:10vw;}
+.footer_logo1 {width:20%; height:30%;}
+.footer_logo2 {width:25%; height:30%;}
+
+.site_m_w {position:fixed;
+        bottom: 20px; right:20px;}
+
+.site_m {width:48px; height:48px;
+        background:rgba(86, 133, 102, 0.7);}
+.site_m a {text-align: center;
+                line-height:48px;
+                color:#fff;}
+
+
+
+
+
+
+
+@media (max-width:991px){
+header:hover {height:calc(350px + 5vw); transition:1s;}
+header .navbar-brand img {width:20vw; height:auto;}
+.sub_title_top h4 {font-size:calc(17px + 0.5vw);}
+.vr {display: none;}
+.nav-item a {text-align:left;}
+.nav_link_item {display:none;}
+.navbar-nav .dropdown-menu {position: sticky;}
+
+h5 {font-size:16px;
+        text-align:start;}
+
+.footer_tit {width:120px;}
+footer a {font-size:12px;}
+}
+
+
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+}
+
+
+
+
+
+
+@media (max-width:575px){
+p {font-size:calc(10px + 0.5vw);}
+a.btn {font-size:11px;}
+
+
+}

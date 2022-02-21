@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box;}
+li { list-style:none; }
+a {text-decoration:none;}
+body {font-family: 'Oswald', sans-serif;}
+header {position: fixed; top:0; left:0; width:100%; height:55px; overflow:hidden; z-index:1;}
+.row {--bs-gutter-x:none;}
+.navbar-toggler {border:none;}
+.navbar-toggler:focus {display:none;}
+section {margin:100px 0;}
+
+header:hover {height:calc(55px + 23vw); transition:1s;}
+
+
+header .navbar-brand img {width:10vw; height:auto;}
+.ground {width:100%; height:100px;}
+.nav-item a {text-align:center;}
+.nav_link_item {display: inline;
+                text-align:center;}
+.nav_link_item a {color:#333;
+        line-height:3vw;
+        font-size:calc(10px + 0.3vw);}
+.nav_link_item a:hover {color:#75b383; border-bottom: 2px solid #75b383; transition:0.2s;}
+.navbar-nav .dropdown-menu {position: relative; top:60px; left:20px;}
+
+.s_tit h1 {color:#626e60;}
+.s_tit h4 {color: #8f9c8d;}
+.section1 {margin:50px 0;}
+
+.section1 h1 {font-size:3vw;}
+.section1 h2 {font-size:1.8vw;}
+.section1 button {font-size:0.7vw; margin-top:3vw;}
+.section1 img {height:50%; width:40%;
+                margin:auto;
+                padding:50px;}
+
+.section3 h2 {font-size:1.5vw;}
+
+
+.section4 {position:relative}
+.section4 h5 {font-size:1.5rem;}
+.section4 button {display:inline-block;
+                position:absolute;
+                z-index:999;
+                top:100%;
+                right:12px;
+                border-radius: 5px;
+                border:none;
+                padding:2px 5px;}
+.section4 button:hover {background:#333;
+                        color:#fff;}
+.slick-prev {margin-right:50px;}
+
+.section5 {background: url("../img/wedding.jpg")no-repeat center center/50%;
+        background-size: contain;
+        height:33vw;}
+.section5 .wedding_txt {padding-top:13vw; height:100%;}
+.section5 button {font-size:1vw; margin-top:3vw;}
+
+
+footer a {color:#bdbdbd;
+        transition: 0.3s;
+        font-size:calc(11px + 0.2vw);}
+footer a:hover {color:#fff;}
+.footer_tit {width:10vw;}
+.footer_logo1 {width:20%; height:30%;}
+.footer_logo2 {width:25%; height:30%;}
+
+.site_m_w {position:fixed;
+        bottom: 20px; right:20px;}
+
+.site_m {width:48px; height:48px;
+        background:rgba(86, 133, 102, 0.7);}
+.site_m a {text-align: center;
+                line-height:48px;
+                color:#fff;}
+
+
+
+
+
+
+
+@media (max-width:991px){
+header:hover {height:calc(350px + 5vw); transition:1s;}
+header .navbar-brand img {width:20vw; height:auto;}
+.sub_title_top h4 {font-size:calc(17px + 0.5vw);}
+.vr {display: none;}
+.nav-item a {text-align:left;}
+.nav_link_item {display:none;}
+.navbar-nav .dropdown-menu {position: sticky;}
+
+.section1 h1 {font-size:3.5vw;}
+.section1 h2 {font-size:2.5vw;}
+.section1 button {font-size:1.5vw; margin-top:3vw;}
+.section1 img {padding:20px;}
+.section3 h2 {font-size:2.5vw;}
+
+.section4 h5 {font-size:calc(16px + 0.2vw);}
+.section4 small {display:none;}
+
+.section5 {background-size: cover;
+        height:50vw;}
+.wedding_txt {padding:20vw 0 0 10vw;}
+.wedding_txt p {font-size:1.5vw;}
+.section5 button {font-size:1vw; margin-top:2vw;}
+
+.footer_tit {width:120px;}
+footer a {font-size:12px;}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:575px){
+p {font-size:calc(10px + 0.5vw);}
+a.btn {font-size:11px;}
+.s_tit h1 {font-size:calc(25px + 0.5vw);}
+.section1 {padding:20px 0;}       
+.section1 h1 {font-size:16px;}
+.section1 h2 {font-size:14px;}
+.section1 img {height:50%; width:40%;
+                margin:auto;
+                padding:10px;}
+.sub_title_top h4 {font-size:calc(15px + 0.5vw);}
+
+.section3 h2 {font-size:20px;}
+
+.section4 h5 {font-size:calc(20px + 0.2vw);}
+.section4 small {display:block;}
+
+}
